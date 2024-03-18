@@ -1,0 +1,968 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>PENGERTIAN MATRIKS# &#8212; My sample book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'ALJABAR';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Welcome to your Jupyter Book" href="intro.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="My sample book - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="My sample book - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Welcome to your Jupyter Book
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks.html">Content with notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FALJABAR.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/ALJABAR.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>PENGERTIAN MATRIKS#</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="pengertian-matriks">
+<h1>PENGERTIAN MATRIKS#<a class="headerlink" href="#pengertian-matriks" title="Link to this heading">#</a></h1>
+<p>Matrix adalah suatu kumpulan data atau elemen-elemen yang disusun dalam bentuk baris dan kolom. Setiap elemen dalam matrix terletak pada suatu posisi yang tertentu berdasarkan baris dan kolomnya. Matrix banyak digunakan dalam berbagai bidang seperti matematika, ilmu komputer, fisika, dan ekonomi untuk merepresentasikan berbagai macam informasi atau struktur data.</p>
+<ul class="simple">
+<li><p>macam-macam matriks, diantaranya:</p></li>
+</ul>
+<ol class="arabic simple">
+<li><p>Matriks nol, matriks yang seluruh elemennya adalah bilangan nol.</p></li>
+<li><p>Matriks baris, matriks yang hanya memiliki satu baris, berordo 1 x n.</p></li>
+<li><p>Matriks kolom, matriks yang hanya memiliki satu kolom, berordo n x 1.</p></li>
+<li><p>Matriks persegi, matriks yang banyaknya baris sama dengan banyaknya kolom, berordo n x n.</p></li>
+<li><p>Matriks diagonal, matriks persegi yang semua elemennya nol, kecuali pada diagonal utamanya atau tengah.</p></li>
+<li><p>Matriks segitiga atas, matriks persegi yang semua elemen di bawah diagonal utamanya adalah nol.</p></li>
+<li><p>Matriks segitiga bawah, matriks persegi yang semua elemen di atas diagonal utamanya adalah nol.</p></li>
+<li><p>Matriks identitas, matriks persegi yang elemen pada diagonal utamanya adalah satu, sedangkan elemen lainnya adalah nol.</p></li>
+</ol>
+<ul class="simple">
+<li><p>operasi matriks</p></li>
+</ul>
+<ol class="arabic simple">
+<li><p>penjumlahan</p></li>
+<li><p>pengurangan</p></li>
+<li><p>perkalian</p></li>
+<li><p>transpose matriks</p></li>
+</ol>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Mendefinisikan matriks A</span>
+<span class="n">A</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
+     <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span>
+     <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">8</span><span class="p">]]</span>
+
+<span class="c1"># Mendefinisikan matriks B</span>
+<span class="n">B</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span>
+     <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">9</span><span class="p">],</span>
+     <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">8</span><span class="p">]]</span>
+
+<span class="c1"># Mendefinisikan matriks C</span>
+<span class="n">C</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">8</span><span class="p">],</span>
+     <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">7</span><span class="p">],</span>
+     <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">]]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>1.PENJUMLAHAN MATRIKS</strong>
+Syarat penjumlahan dan pengurangan matriks yaitu : jika terdapat dua matriks, misal matriks A dan B, yang memiliki ordo sama, maka elemen-elemen yang seletak dapat dijumlahkan atau dikurangkan. Jumlah matriks A dan matriks B dapat dinyatakan dengan A+B, sedangkan selisih matriks A dan matriks B dapat dinyatakan dengan A – B.
+contoh rumus
+matriks A:
+$<span class="math notranslate nohighlight">\(
+matriks A=\begin{bmatrix}
+a &amp; b &amp; c \\
+d &amp; e &amp; f
+\end{bmatrix}
+\)</span><span class="math notranslate nohighlight">\(
+matriks B:
+\)</span><span class="math notranslate nohighlight">\(
+matriks B=\begin{bmatrix}
+g &amp; h &amp; i \\
+j &amp; k &amp; l \\
+\end{bmatrix}
+\)</span><span class="math notranslate nohighlight">\(
+A+B=
+\)</span><span class="math notranslate nohighlight">\(
+A+B =\begin{bmatrix}
+a+g &amp; b+h &amp; c+i \\
+d+j &amp; e+k &amp; f+l \\
+\end{bmatrix}
+\)</span>$</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">penjumlahan_matriks</span><span class="p">(</span><span class="n">matriks1</span><span class="p">,</span> <span class="n">matriks2</span><span class="p">):</span>
+    <span class="n">hasil_penjumlahan</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">matriks1</span><span class="p">)):</span>
+        <span class="n">baris_hasil</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">matriks1</span><span class="p">[</span><span class="mi">0</span><span class="p">])):</span>
+            <span class="n">baris_hasil</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">matriks1</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">+</span> <span class="n">matriks2</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">])</span>
+        <span class="n">hasil_penjumlahan</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">baris_hasil</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">hasil_penjumlahan</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#  Contoh Penjumlahan matriks A dan B</span>
+<span class="n">hasil_penjumlahan</span> <span class="o">=</span> <span class="n">penjumlahan_matriks</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hasil Penjumlahan A + B:&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">hasil_penjumlahan</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Hasil Penjumlahan A + B:
+[4, 4, 9]
+[6, 5, 15]
+[7, 8, 16]
+</pre></div>
+</div>
+</div>
+</div>
+<p>Penjumlahan matrix A + B dilakukan dengan menjumlahkan elemen-elemen yang sesuai dari kedua matrix. Matrix A dan B memiliki dimensi yang sama, yaitu
+3
+×
+3
+3×3, sehingga penjumlahan dapat dilakukan. Berikut adalah langkah-langkah untuk menambahkan kedua matrix tersebut:</p>
+<p>Berikut adalah matrix A:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+matriks A=\begin{bmatrix}
+2 &amp; 1 &amp; 3 \\
+2 &amp; 3 &amp; 6 \\
+4 &amp; 2 &amp; 8
+\end{bmatrix}
+\end{split}\]</div>
+<p>Berikut adalah matrix B:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+matriks B=\begin{bmatrix}
+2 &amp; 3 &amp; 6 \\
+4 &amp; 2 &amp; 9 \\
+3 &amp; 6 &amp; 8
+\end{bmatrix}
+\end{split}\]</div>
+<p>Untuk menjumlahkan matrix A + B, kita harus menjumlahkan setiap elemen yang sesuai:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+A + B = \begin{bmatrix}
+2+2 &amp; 1+3 &amp; 3+6 \\
+2+4 &amp; 3+2 &amp; 6+9 \\
+4+3 &amp; 2+6 &amp; 8+8
+\end{bmatrix}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+A + B = \begin{bmatrix}
+4 &amp; 4 &amp; 9 \\
+6 &amp; 5 &amp; 15 \\
+7 &amp; 8 &amp; 16
+\end{bmatrix}
+\end{split}\]</div>
+<p>Jadi, hasil penjumlahan matrix A + B adalah:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+4 &amp; 4 &amp; 9 \\
+6 &amp; 5 &amp; 15 \\
+7 &amp; 8 &amp; 16
+\end{bmatrix}
+\end{split}\]</div>
+<p><strong>2.PENGURANGAN MATRIKS</strong></p>
+<p>Syarat penjumlahan dan pengurangan matriks yaitu : jika terdapat dua matriks, misal matriks A dan B, yang memiliki ordo sama, maka elemen-elemen yang seletak dapat dijumlahkan atau dikurangkan. Jumlah matriks A dan matriks B dapat dinyatakan dengan A+B, sedangkan selisih matriks A dan matriks B dapat dinyatakan dengan A – B.
+matriks A:
+$<span class="math notranslate nohighlight">\(
+matriks A=\begin{bmatrix}
+a &amp; b &amp; c \\
+d &amp; e &amp; f
+\end{bmatrix}
+\)</span><span class="math notranslate nohighlight">\(
+matriks B:
+\)</span><span class="math notranslate nohighlight">\(
+matriks B=\begin{bmatrix}
+g &amp; h &amp; i \\
+j &amp; k &amp; l \\
+\end{bmatrix}
+\)</span><span class="math notranslate nohighlight">\(
+A-B =
+\)</span><span class="math notranslate nohighlight">\(
+A-B =\begin{bmatrix}
+a-g &amp; b-h &amp; c-i \\
+d-j &amp; e-k &amp; f-l \\
+\end{bmatrix}
+\)</span>$</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">pengurangan_matriks</span><span class="p">(</span><span class="n">matriks1</span><span class="p">,</span> <span class="n">matriks2</span><span class="p">):</span>
+    <span class="n">hasil_pengurangan</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">matriks1</span><span class="p">)):</span>
+        <span class="n">baris_hasil</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">matriks1</span><span class="p">[</span><span class="mi">0</span><span class="p">])):</span>
+            <span class="n">baris_hasil</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">matriks1</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">-</span> <span class="n">matriks2</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">])</span>
+        <span class="n">hasil_pengurangan</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">baris_hasil</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">hasil_pengurangan</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Pengurangan matriks A dan B</span>
+<span class="n">hasil_pengurangan</span> <span class="o">=</span> <span class="n">pengurangan_matriks</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hasil Pengurangan A - B:&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">hasil_pengurangan</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Hasil Pengurangan A - B:
+[0, -2, -3]
+[-2, 1, -3]
+[1, -4, 0]
+</pre></div>
+</div>
+</div>
+</div>
+<p>Untuk melakukan pengurangan matriks ( A - B ), kita mengurangkan setiap elemen matriks ( B ) dari elemen yang sesuai di matriks ( A ).</p>
+<p>Matrix ( A ) dan ( B ) yang telah didefinisikan sebelumnya adalah:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+A = \begin{bmatrix} 2 &amp; 1 &amp; 3 \\ 2 &amp; 3 &amp; 6 \\ 4 &amp; 2 &amp; 8 \end{bmatrix}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+B = \begin{bmatrix} 2 &amp; 3 &amp; 6 \\ 4 &amp; 2 &amp; 9 \\ 3 &amp; 6 &amp; 8 \end{bmatrix}
+\end{split}\]</div>
+<p>Langkah-langkah pengurangan ( A - B ) adalah sebagai berikut:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+A - B = \begin{bmatrix} 2-2 &amp; 1-3 &amp; 3-6 \\ 2-4 &amp; 3-2 &amp; 6-9 \\ 4-3 &amp; 2-6 &amp; 8-8 \end{bmatrix}
+\end{split}\]</div>
+<p>Hasilnya adalah:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+A - B = \begin{bmatrix} 0 &amp; -2 &amp; -3 \\ -2 &amp; 1 &amp; -3 \\ 1 &amp; -4 &amp; 0 \end{bmatrix}
+\end{split}\]</div>
+<p>Jadi, hasil pengurangan matriks ( A - B ) adalah:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+A - B = \begin{bmatrix} 0 &amp; -2 &amp; -3 \\ -2 &amp; 1 &amp; -3 \\ 1 &amp; -4 &amp; 0 \end{bmatrix}
+\end{split}\]</div>
+<p><strong>3. PERKALIAN MATRIKS</strong></p>
+<p>Berbeda dengan perkalian skalar yang hanya mengalikan setiap elemen matriks dengan bilangan skalar, perkalian dua matriks memiliki aturan tersendiri.  Syarat dua buah matriks, misal matriks A dan matriks B, dapat dikalikan adalah jika banyaknya kolom matriks A sama dengan banyaknya baris matriks B.
+Diberikan matriks <span class="math notranslate nohighlight">\(A\)</span> dan <span class="math notranslate nohighlight">\(B\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+A = \begin{bmatrix} a &amp; b &amp; c \\ d &amp; e &amp; f \\ g &amp; h &amp; i \end{bmatrix}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+B = \begin{bmatrix} j &amp; k &amp; l \\ m &amp; n &amp; o \\ p &amp; q &amp; r \end{bmatrix}
+\end{split}\]</div>
+<p>Langkah-langkah perkalian matriks <span class="math notranslate nohighlight">\(A\)</span> dengan <span class="math notranslate nohighlight">\(B\)</span> tetap sama:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+A \cdot B = \begin{bmatrix} aj + bm + cp &amp; ak + bn + cq &amp; al + bo + cr \\
+                            dj + em + fp &amp; dk + en + fq &amp; dl + eo + fr \\
+                            gj + hm + ip &amp; gk + hn + iq &amp; gl + ho + ir \end{bmatrix}
+\end{split}\]</div>
+<p>Jadi, hasil perkalian matriks <span class="math notranslate nohighlight">\(A\)</span> dengan <span class="math notranslate nohighlight">\(B\)</span> dalam bentuk variabel adalah:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+A \cdot B = \begin{bmatrix} aj + bm + cp &amp; ak + bn + cq &amp; al + bo + cr \\
+                            dj + em + fp &amp; dk + en + fq &amp; dl + eo + fr \\
+                            gj + hm + ip &amp; gk + hn + iq &amp; gl + ho + ir \end{bmatrix}
+\end{split}\]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">perkalian_matriks</span><span class="p">(</span><span class="n">matriks1</span><span class="p">,</span> <span class="n">matriks2</span><span class="p">):</span>
+    <span class="n">hasil_perkalian</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">matriks1</span><span class="p">)):</span>
+        <span class="n">baris_hasil</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">matriks2</span><span class="p">[</span><span class="mi">0</span><span class="p">])):</span>
+            <span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
+            <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">matriks1</span><span class="p">[</span><span class="mi">0</span><span class="p">])):</span>
+                <span class="n">total</span> <span class="o">+=</span> <span class="n">matriks1</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">k</span><span class="p">]</span> <span class="o">*</span> <span class="n">matriks2</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="n">j</span><span class="p">]</span>
+            <span class="n">baris_hasil</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">total</span><span class="p">)</span>
+        <span class="n">hasil_perkalian</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">baris_hasil</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">hasil_perkalian</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Perkalian matriks A dan B</span>
+<span class="n">hasil_perkalian</span> <span class="o">=</span> <span class="n">perkalian_matriks</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hasil Perkalian A * B:&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">hasil_perkalian</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Hasil Perkalian A * B:
+[17, 26, 45]
+[34, 48, 87]
+[40, 64, 106]
+</pre></div>
+</div>
+</div>
+</div>
+<p>Untuk melakukan perkalian matriks (A) dengan (B), kita menggunakan aturan perkalian matriks. Dalam perkalian matriks, setiap elemen baris pertama dari matriks pertama dikalikan dengan setiap elemen kolom pertama dari matriks kedua, kemudian hasilnya ditambahkan. Ini diulangi untuk setiap elemen baris dan kolom.</p>
+<p>Matrix (A) dan (B) yang telah didefinisikan sebelumnya adalah:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+A = \begin{bmatrix} 2 &amp; 1 &amp; 3 \\ 2 &amp; 3 &amp; 6 \\ 4 &amp; 2 &amp; 8 \end{bmatrix}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+B = \begin{bmatrix} 2 &amp; 3 &amp; 6 \\ 4 &amp; 2 &amp; 9 \\ 3 &amp; 6 &amp; 8 \end{bmatrix}
+\end{split}\]</div>
+<p>Langkah-langkah perkalian matriks (A) dengan (B) adalah sebagai berikut:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+A \cdot B = \begin{bmatrix} 2\cdot2+1\cdot4+3\cdot3 &amp; 2\cdot3+1\cdot2+3\cdot6 &amp; 2\cdot6+1\cdot9+3\cdot8 \\
+                            2\cdot2+3\cdot4+6\cdot3 &amp; 2\cdot3+3\cdot2+6\cdot6 &amp; 2\cdot6+3\cdot9+6\cdot8 \\
+                            4\cdot2+2\cdot4+8\cdot3 &amp; 4\cdot3+2\cdot2+8\cdot6 &amp; 4\cdot6+2\cdot9+8\cdot8 \end{bmatrix}
+\end{split}\]</div>
+<p>Hasilnya adalah:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+A \cdot B = \begin{bmatrix} 2+4+9 &amp; 6+2+18 &amp; 12+9+24 \\
+                            4+12+18 &amp; 6+6+36 &amp; 12+27+48 \\
+                            8+8+24 &amp; 12+4+48 &amp; 24+18+64 \end{bmatrix}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+A \cdot B = \begin{bmatrix} 17 &amp; 26 &amp; 45 \\
+                            34 &amp; 48 &amp; 87 \\
+                            40 &amp; 64 &amp; 106 \end{bmatrix}
+\end{split}\]</div>
+<p>Jadi, hasil perkalian matriks (A) dengan (B) adalah:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+A \cdot B = \begin{bmatrix} 17 &amp; 26 &amp; 45 \\
+                            34 &amp; 48 &amp; 87 \\
+                            40 &amp; 64 &amp; 106 \end{bmatrix}
+\end{split}\]</div>
+<p><strong>4. INVERSE MATRIKS</strong></p>
+<p>contoh: perkalian matriks z=A.(B.C)</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">BC</span> <span class="o">=</span> <span class="n">perkalian_matriks</span><span class="p">(</span><span class="n">B</span><span class="p">,</span><span class="n">C</span><span class="p">)</span>
+<span class="n">Z</span> <span class="o">=</span> <span class="n">perkalian_matriks</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="n">BC</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">Z</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[363, 633]
+[695, 1217]
+[866, 1510]
+</pre></div>
+</div>
+</div>
+</div>
+<p><em>Untuk operasi A.(B.C)</em></p>
+<p>Langkah pertama adalah melakukan perkalian matriks ( B ) dengan matriks ( C ) untuk mendapatkan hasil ( BC ). Prosesnya adalah sebagai berikut:</p>
+<div class="math notranslate nohighlight">
+\[
+\text{Matriks } B :
+\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+B = \begin{bmatrix} 2 &amp; 3 &amp; 6 \\ 4 &amp; 2 &amp; 9 \\ 3 &amp; 6 &amp; 8 \end{bmatrix}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[
+\text{Matriks } C :
+\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+C = \begin{bmatrix} 2 &amp; 8 \\ 4 &amp; 7 \\ 5 &amp; 7 \end{bmatrix}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[
+\text{Perkalian } B \text{ dengan } C \text{ akan menghasilkan matriks } BC \text{ dengan nilai:}
+\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+BC = \begin{bmatrix} 50 &amp; 77 \\ 69 &amp; 121 \\ 74 &amp; 115 \end{bmatrix}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[
+\text{### Langkah 2: Perkalian Matriks } A \text{ dengan } BC
+Langkah kedua adalah mengalikan matriks \( A \) dengan hasil perkalian \( BC \) untuk mendapatkan \( Z \). Prosesnya adalah sebagai berikut:\]</div>
+<p>\text{Matriks } A :
+$$</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+A = \begin{bmatrix} 2 &amp; 1 &amp; 3 \\ 2 &amp; 3 &amp; 6 \\ 4 &amp; 2 &amp; 8 \end{bmatrix}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[
+\text{Hasil perkalian } BC :
+\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+BC = \begin{bmatrix} 50 &amp; 77 \\ 69 &amp; 121 \\ 74 &amp; 115 \end{bmatrix}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[
+\text{Perkalian } A \text{ dengan } BC \text{ akan menghasilkan matriks } Z \text{ dengan nilai:}
+\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+Z = \begin{bmatrix} 363 &amp; 633 \\ 695 &amp; 1217 \\ 866 &amp; 1510 \end{bmatrix}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[
+\text{Ini adalah hasil dari perkalian matriks yang telah dihitung menggunakan kode Python yang diberikan sebelumnya.}
+\]</div>
+<p><strong>5. TRANSPOSE MATRIKS</strong></p>
+<p>Transpose matriks adalah matriks baru yang elemen baris dan kolomnya merupakan elemen kolom dan baris matriks sebelumnya. dxengan kata lain , transpose matriks dibentuk oleh pembalikan elemen baris menjadi kolom dan elemen kolom menjadi baris.
+$<span class="math notranslate nohighlight">\(
+Z = \begin{bmatrix} a11 &amp; b \\ c &amp; d \\ e &amp; f \end{bmatrix}
+\)</span>$</p>
+<div class="math notranslate nohighlight">
+\[
+\text{Transpose dari } Z \text{, disimbolkan dengan } Z^T \text{, akan mengubah baris menjadi kolom dan sebaliknya, sehingga:}
+\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+Z^T = \begin{bmatrix} a &amp; c &amp; 5 \\ b &amp; d &amp; 7 \end{bmatrix}
+\end{split}\]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">transpose_matriks</span><span class="p">(</span><span class="n">matriks</span><span class="p">):</span>
+    <span class="c1"># Mendapatkan jumlah baris dan kolom matriks</span>
+    <span class="n">baris</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">matriks</span><span class="p">)</span>
+    <span class="n">kolom</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">matriks</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+
+    <span class="c1"># Membuat matriks baru dengan ukuran kolom x baris</span>
+    <span class="n">transposed_matriks</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">0</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">baris</span><span class="p">)]</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">kolom</span><span class="p">)]</span>
+
+    <span class="c1"># Melakukan transposisi matriks</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">baris</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">kolom</span><span class="p">):</span>
+            <span class="n">transposed_matriks</span><span class="p">[</span><span class="n">j</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">matriks</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span>
+
+    <span class="k">return</span> <span class="n">transposed_matriks</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Mendapatkan transpose dari matriks C</span>
+<span class="n">transpose_C</span> <span class="o">=</span> <span class="n">transpose_matriks</span><span class="p">(</span><span class="n">C</span><span class="p">)</span>
+<span class="c1"># Cetak hasil transpose</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Transpose dari matriks C:&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">transpose_C</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Transpose dari matriks C:
+[2, 4, 5]
+[8, 7, 7]
+</pre></div>
+</div>
+</div>
+</div>
+<p><em>teks yang dimiringkan</em>$<span class="math notranslate nohighlight">\(
+\text{Untuk melakukan transpose pada matriks } C \text{, langkah-langkahnya adalah sebagai berikut:}
+\)</span>$</p>
+<div class="math notranslate nohighlight">
+\[
+\text{Matriks } C :
+\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+C = \begin{bmatrix} 2 &amp; 8 \\ 4 &amp; 7 \\ 5 &amp; 7 \end{bmatrix}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[
+\text{Transpose dari } C \text{, disimbolkan dengan } C^T \text{, akan mengubah baris menjadi kolom dan sebaliknya, sehingga:}
+\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+C^T = \begin{bmatrix} 2 &amp; 4 &amp; 5 \\ 8 &amp; 7 &amp; 7 \end{bmatrix}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[
+\text{Ini adalah matriks hasil transpose dari matriks } C \text{. Dalam matriks hasil transpose, baris pertama dari matriks asal menjadi kolom pertama,}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\text{baris kedua menjadi kolom kedua, dan seterusnya.}
+\]</div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="intro.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Welcome to your Jupyter Book</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book Community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
