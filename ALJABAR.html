@@ -62,7 +62,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'ALJABAR';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Welcome to your Jupyter Book" href="intro.html" />
+    <link rel="prev" title="&lt;no title&gt;" href="sistemlinier.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -173,7 +173,7 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="intro.html">
-                    Welcome to your Jupyter Book
+                    SELAMAT DATANG DI NOTEBOOK ALDI 23-040
                 </a>
             </li>
         </ul>
@@ -380,19 +380,18 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="pengertian-matriks">
 <h1>PENGERTIAN MATRIKS#<a class="headerlink" href="#pengertian-matriks" title="Link to this heading">#</a></h1>
-<p>Matrix adalah suatu kumpulan data atau elemen-elemen yang disusun dalam bentuk baris dan kolom. Setiap elemen dalam matrix terletak pada suatu posisi yang tertentu berdasarkan baris dan kolomnya. Matrix banyak digunakan dalam berbagai bidang seperti matematika, ilmu komputer, fisika, dan ekonomi untuk merepresentasikan berbagai macam informasi atau struktur data.</p>
+<p>Matrix adalah kumpulan data atau elemen yang terletak pada posisi tertentu berdasarkan baris dan kolomnya. Matrix banyak digunakan dalam bidang seperti matematika, ilmu komputer, fisika, dan ekonomi untuk menunjukkan berbagai macam struktur data atau data.</p>
 <ul class="simple">
 <li><p>macam-macam matriks, diantaranya:</p></li>
 </ul>
 <ol class="arabic simple">
-<li><p>Matriks nol, matriks yang seluruh elemennya adalah bilangan nol.</p></li>
-<li><p>Matriks baris, matriks yang hanya memiliki satu baris, berordo 1 x n.</p></li>
-<li><p>Matriks kolom, matriks yang hanya memiliki satu kolom, berordo n x 1.</p></li>
-<li><p>Matriks persegi, matriks yang banyaknya baris sama dengan banyaknya kolom, berordo n x n.</p></li>
-<li><p>Matriks diagonal, matriks persegi yang semua elemennya nol, kecuali pada diagonal utamanya atau tengah.</p></li>
-<li><p>Matriks segitiga atas, matriks persegi yang semua elemen di bawah diagonal utamanya adalah nol.</p></li>
-<li><p>Matriks segitiga bawah, matriks persegi yang semua elemen di atas diagonal utamanya adalah nol.</p></li>
-<li><p>Matriks identitas, matriks persegi yang elemen pada diagonal utamanya adalah satu, sedangkan elemen lainnya adalah nol.</p></li>
+<li><p>Matriks baris-kolom, juga dikenal sebagai matriks biasa, adalah jenis matriks yang paling umum, di mana elemennya diatur dalam baris dan kolom.</p></li>
+<li><p>Matrik Nol: Matriks di mana semua elemennya nol. Ini biasanya ditulis sebagai 0 0 atau 0 × 0 m×n untuk matriks × m×n.</p></li>
+<li><p>Matriks Identitas: Matriks persegi dengan semua elemen diagonal utama adalah 1 dan semua elemen diagonal lainnya adalah 0. Matriks ini biasanya ditulis sebagai I atau I n untuk matriks identitas berukuran × n × n.</p></li>
+<li><p>Matriks diagonal adalah matriks di mana semua elemen tidak ada di luar diagonal utama.</p></li>
+<li><p>Matriks invers: Matriks yang menghasilkan matriks identitas jika dikalikan dengan matriks aslinya.</p></li>
+<li><p>Matriks singuler adalah matriks di mana tidak ada determinannya.</p></li>
+<li><p>matriks persegi dengan semua elemen di atas diagonal utamanya adalah nol.</p></li>
 </ol>
 <ul class="simple">
 <li><p>operasi matriks</p></li>
@@ -423,10 +422,10 @@ document.write(`
 </div>
 </div>
 </div>
-<p><strong>1.PENJUMLAHAN MATRIKS</strong>
-Syarat penjumlahan dan pengurangan matriks yaitu : jika terdapat dua matriks, misal matriks A dan B, yang memiliki ordo sama, maka elemen-elemen yang seletak dapat dijumlahkan atau dikurangkan. Jumlah matriks A dan matriks B dapat dinyatakan dengan A+B, sedangkan selisih matriks A dan matriks B dapat dinyatakan dengan A – B.
-contoh rumus
-matriks A:
+<p><strong>1. matriks penjumplahan</strong></p>
+<p>Syarat penjumlaha matriks adalah bahwa jika dua matriks, seperti matriks A dan B, memiliki ordo yang sama, maka elemen-elemen yang seletak dapat dijumlahkan. Jumlah matriks A dan B dapat ditulis dengan rumus A+B,
+Berikut adalah contoh rumus penjumlahan matriks.</p>
+<p>matriks A:
 $<span class="math notranslate nohighlight">\(
 matriks A=\begin{bmatrix}
 a &amp; b &amp; c \\
@@ -481,12 +480,8 @@ d+j &amp; e+k &amp; f+l \\
 </div>
 </div>
 </div>
-<p>Penjumlahan matrix A + B dilakukan dengan menjumlahkan elemen-elemen yang sesuai dari kedua matrix. Matrix A dan B memiliki dimensi yang sama, yaitu
-3
-×
-3
-3×3, sehingga penjumlahan dapat dilakukan. Berikut adalah langkah-langkah untuk menambahkan kedua matrix tersebut:</p>
-<p>Berikut adalah matrix A:</p>
+<p>Matrix A dan B dapat dijumlahkan dengan menjumlahkan elemen-elemen yang sesuai dari kedua matrix, karena keduanya memiliki dimensi yang sama, yaitu 3×3 3×3. Untuk menambah kedua matrix tersebut, ikuti langkah-langkah berikut:</p>
+<p>matrix A:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 matriks A=\begin{bmatrix}
@@ -495,7 +490,7 @@ matriks A=\begin{bmatrix}
 4 &amp; 2 &amp; 8
 \end{bmatrix}
 \end{split}\]</div>
-<p>Berikut adalah matrix B:</p>
+<p>matrix B:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 matriks B=\begin{bmatrix}
@@ -504,7 +499,7 @@ matriks B=\begin{bmatrix}
 3 &amp; 6 &amp; 8
 \end{bmatrix}
 \end{split}\]</div>
-<p>Untuk menjumlahkan matrix A + B, kita harus menjumlahkan setiap elemen yang sesuai:</p>
+<p>Untuk menjumlahkan matrix A + B, maka kita harus menjumlahkan setiap elemen yang sesuai:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 A + B = \begin{bmatrix}
@@ -521,7 +516,7 @@ A + B = \begin{bmatrix}
 7 &amp; 8 &amp; 16
 \end{bmatrix}
 \end{split}\]</div>
-<p>Jadi, hasil penjumlahan matrix A + B adalah:</p>
+<p>Jadi, hasil dari penjumlahan matrix A + B adalah:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{bmatrix}
@@ -531,7 +526,7 @@ A + B = \begin{bmatrix}
 \end{bmatrix}
 \end{split}\]</div>
 <p><strong>2.PENGURANGAN MATRIKS</strong></p>
-<p>Syarat penjumlahan dan pengurangan matriks yaitu : jika terdapat dua matriks, misal matriks A dan B, yang memiliki ordo sama, maka elemen-elemen yang seletak dapat dijumlahkan atau dikurangkan. Jumlah matriks A dan matriks B dapat dinyatakan dengan A+B, sedangkan selisih matriks A dan matriks B dapat dinyatakan dengan A – B.
+<p>Syarat pengurangan matriks yaitu : jika terdapat dua matriks, misal matriks A dan B, yang memiliki ordo sama, maka elemen-elemen yang seletak dapat dikurangkan. selisih matriks A dan matriks B dapat dinyatakan dengan A – B.
 matriks A:
 $<span class="math notranslate nohighlight">\(
 matriks A=\begin{bmatrix}
@@ -588,7 +583,7 @@ d-j &amp; e-k &amp; f-l \\
 </div>
 </div>
 <p>Untuk melakukan pengurangan matriks ( A - B ), kita mengurangkan setiap elemen matriks ( B ) dari elemen yang sesuai di matriks ( A ).</p>
-<p>Matrix ( A ) dan ( B ) yang telah didefinisikan sebelumnya adalah:</p>
+<p>Matrix ( A ) dan ( B ) yang telah disebutkan sebelumnya yaitu:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 A = \begin{bmatrix} 2 &amp; 1 &amp; 3 \\ 2 &amp; 3 &amp; 6 \\ 4 &amp; 2 &amp; 8 \end{bmatrix}
@@ -613,8 +608,8 @@ A - B = \begin{bmatrix} 0 &amp; -2 &amp; -3 \\ -2 &amp; 1 &amp; -3 \\ 1 &amp; -4
 A - B = \begin{bmatrix} 0 &amp; -2 &amp; -3 \\ -2 &amp; 1 &amp; -3 \\ 1 &amp; -4 &amp; 0 \end{bmatrix}
 \end{split}\]</div>
 <p><strong>3. PERKALIAN MATRIKS</strong></p>
-<p>Berbeda dengan perkalian skalar yang hanya mengalikan setiap elemen matriks dengan bilangan skalar, perkalian dua matriks memiliki aturan tersendiri.  Syarat dua buah matriks, misal matriks A dan matriks B, dapat dikalikan adalah jika banyaknya kolom matriks A sama dengan banyaknya baris matriks B.
-Diberikan matriks <span class="math notranslate nohighlight">\(A\)</span> dan <span class="math notranslate nohighlight">\(B\)</span>:</p>
+<p>Perkalian dua matriks memiliki aturan yang berbeda dari perkalian skalar, yang hanya mengalikan setiap elemen matriks dengan bilangan skalar. Sebuah matriks, misalnya matriks A dan matriks B, dapat dikalikan jika banyaknya kolom matriks A sama dengan banyaknya baris matriks B.</p>
+<p>matriks <span class="math notranslate nohighlight">\(A\)</span> dan <span class="math notranslate nohighlight">\(B\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 A = \begin{bmatrix} a &amp; b &amp; c \\ d &amp; e &amp; f \\ g &amp; h &amp; i \end{bmatrix}
@@ -623,7 +618,7 @@ A = \begin{bmatrix} a &amp; b &amp; c \\ d &amp; e &amp; f \\ g &amp; h &amp; i 
 \[\begin{split}
 B = \begin{bmatrix} j &amp; k &amp; l \\ m &amp; n &amp; o \\ p &amp; q &amp; r \end{bmatrix}
 \end{split}\]</div>
-<p>Langkah-langkah perkalian matriks <span class="math notranslate nohighlight">\(A\)</span> dengan <span class="math notranslate nohighlight">\(B\)</span> tetap sama:</p>
+<p>Langkah-langkah perkalian matriks <span class="math notranslate nohighlight">\(A\)</span> dengan <span class="math notranslate nohighlight">\(B\)</span> tetap sama yaitu:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 A \cdot B = \begin{bmatrix} aj + bm + cp &amp; ak + bn + cq &amp; al + bo + cr \\
@@ -674,8 +669,8 @@ A \cdot B = \begin{bmatrix} aj + bm + cp &amp; ak + bn + cq &amp; al + bo + cr \
 </div>
 </div>
 </div>
-<p>Untuk melakukan perkalian matriks (A) dengan (B), kita menggunakan aturan perkalian matriks. Dalam perkalian matriks, setiap elemen baris pertama dari matriks pertama dikalikan dengan setiap elemen kolom pertama dari matriks kedua, kemudian hasilnya ditambahkan. Ini diulangi untuk setiap elemen baris dan kolom.</p>
-<p>Matrix (A) dan (B) yang telah didefinisikan sebelumnya adalah:</p>
+<p>Aturan perkalian matriks digunakan untuk melakukan perkalian matriks (A) dengan (B). Dalam metode ini, setiap elemen baris pertama dari matriks pertama dikalikan dengan setiap elemen kolom pertama dari matriks kedua, dan kemudian hasilnya ditambahkan. Prosedur ini dilakukan untuk setiap elemen baris dan kolom.</p>
+<p>Matrix (A) dan (B) yang telah disebutkan sebelumnya adalah:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 A = \begin{bmatrix} 2 &amp; 1 &amp; 3 \\ 2 &amp; 3 &amp; 6 \\ 4 &amp; 2 &amp; 8 \end{bmatrix}
@@ -733,36 +728,25 @@ A \cdot B = \begin{bmatrix} 17 &amp; 26 &amp; 45 \\
 </div>
 <p><em>Untuk operasi A.(B.C)</em></p>
 <p>Langkah pertama adalah melakukan perkalian matriks ( B ) dengan matriks ( C ) untuk mendapatkan hasil ( BC ). Prosesnya adalah sebagai berikut:</p>
-<div class="math notranslate nohighlight">
-\[
-\text{Matriks } B :
-\]</div>
+<p>Matriks B:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 B = \begin{bmatrix} 2 &amp; 3 &amp; 6 \\ 4 &amp; 2 &amp; 9 \\ 3 &amp; 6 &amp; 8 \end{bmatrix}
 \end{split}\]</div>
-<div class="math notranslate nohighlight">
-\[
-\text{Matriks } C :
-\]</div>
-<div class="math notranslate nohighlight">
-\[\begin{split}
+<p>Matriks C :
+$<span class="math notranslate nohighlight">\(
 C = \begin{bmatrix} 2 &amp; 8 \\ 4 &amp; 7 \\ 5 &amp; 7 \end{bmatrix}
-\end{split}\]</div>
-<div class="math notranslate nohighlight">
-\[
-\text{Perkalian } B \text{ dengan } C \text{ akan menghasilkan matriks } BC \text{ dengan nilai:}
-\]</div>
-<div class="math notranslate nohighlight">
-\[\begin{split}
+\)</span>$</p>
+<p>Perkalian B dengan C akan menghasilkan matriks BC dengan nilai:
+$<span class="math notranslate nohighlight">\(
 BC = \begin{bmatrix} 50 &amp; 77 \\ 69 &amp; 121 \\ 74 &amp; 115 \end{bmatrix}
-\end{split}\]</div>
+\)</span>$</p>
+<p>Langkah 2: Perkalian Matriks A dengan BC
+Langkah kedua adalah mengalikan matriks ( A ) dengan hasil perkalian ( BC ) untuk mendapatkan matriks ( Z ). berikut prosesnya:</p>
 <div class="math notranslate nohighlight">
 \[
-\text{### Langkah 2: Perkalian Matriks } A \text{ dengan } BC
-Langkah kedua adalah mengalikan matriks \( A \) dengan hasil perkalian \( BC \) untuk mendapatkan \( Z \). Prosesnya adalah sebagai berikut:\]</div>
-<p>\text{Matriks } A :
-$$</p>
+\text{Matriks } A :
+\]</div>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 A = \begin{bmatrix} 2 &amp; 1 &amp; 3 \\ 2 &amp; 3 &amp; 6 \\ 4 &amp; 2 &amp; 8 \end{bmatrix}
@@ -775,27 +759,21 @@ A = \begin{bmatrix} 2 &amp; 1 &amp; 3 \\ 2 &amp; 3 &amp; 6 \\ 4 &amp; 2 &amp; 8 
 \[\begin{split}
 BC = \begin{bmatrix} 50 &amp; 77 \\ 69 &amp; 121 \\ 74 &amp; 115 \end{bmatrix}
 \end{split}\]</div>
-<div class="math notranslate nohighlight">
-\[
-\text{Perkalian } A \text{ dengan } BC \text{ akan menghasilkan matriks } Z \text{ dengan nilai:}
-\]</div>
-<div class="math notranslate nohighlight">
-\[\begin{split}
+<p>Perkalian A dengan BC akan menghasilkan matriks Z dengan nilai:
+$<span class="math notranslate nohighlight">\(
 Z = \begin{bmatrix} 363 &amp; 633 \\ 695 &amp; 1217 \\ 866 &amp; 1510 \end{bmatrix}
-\end{split}\]</div>
+\)</span>$</p>
 <div class="math notranslate nohighlight">
 \[
 \text{Ini adalah hasil dari perkalian matriks yang telah dihitung menggunakan kode Python yang diberikan sebelumnya.}
 \]</div>
 <p><strong>5. TRANSPOSE MATRIKS</strong></p>
-<p>Transpose matriks adalah matriks baru yang elemen baris dan kolomnya merupakan elemen kolom dan baris matriks sebelumnya. dxengan kata lain , transpose matriks dibentuk oleh pembalikan elemen baris menjadi kolom dan elemen kolom menjadi baris.
-$<span class="math notranslate nohighlight">\(
-Z = \begin{bmatrix} a11 &amp; b \\ c &amp; d \\ e &amp; f \end{bmatrix}
-\)</span>$</p>
+<p>Transpose matriks adalah matriks baru yang elemen baris dan kolomnya dikembalikan ke elemen baris dan kolom matriks sebelumnya. Dengan kata lain, transpose matriks dibentuk oleh pembalikan elemen baris dan kolom menjadi elemen baris dan kolom matriks sebelumnya.</p>
 <div class="math notranslate nohighlight">
-\[
-\text{Transpose dari } Z \text{, disimbolkan dengan } Z^T \text{, akan mengubah baris menjadi kolom dan sebaliknya, sehingga:}
-\]</div>
+\[\begin{split}
+Z = \begin{bmatrix} a11 &amp; b \\ c &amp; d \\ e &amp; f \end{bmatrix}
+\end{split}\]</div>
+<p>Transpose dari Z \text disimbolkan dengan Z^T akan mengubah baris menjadi kolom dan sebaliknya, sehingga:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 Z^T = \begin{bmatrix} a &amp; c &amp; 5 \\ b &amp; d &amp; 7 \end{bmatrix}
@@ -839,33 +817,17 @@ Z^T = \begin{bmatrix} a &amp; c &amp; 5 \\ b &amp; d &amp; 7 \end{bmatrix}
 </div>
 </div>
 </div>
-<p><em>teks yang dimiringkan</em>$<span class="math notranslate nohighlight">\(
-\text{Untuk melakukan transpose pada matriks } C \text{, langkah-langkahnya adalah sebagai berikut:}
-\)</span>$</p>
-<div class="math notranslate nohighlight">
-\[
-\text{Matriks } C :
-\]</div>
-<div class="math notranslate nohighlight">
-\[\begin{split}
+<p>Untuk melakukan transpose pada matriks C langkah-langkahnya adalah sebagai berikut:</p>
+<p>matriks C
+$<span class="math notranslate nohighlight">\(
 C = \begin{bmatrix} 2 &amp; 8 \\ 4 &amp; 7 \\ 5 &amp; 7 \end{bmatrix}
-\end{split}\]</div>
-<div class="math notranslate nohighlight">
-\[
-\text{Transpose dari } C \text{, disimbolkan dengan } C^T \text{, akan mengubah baris menjadi kolom dan sebaliknya, sehingga:}
-\]</div>
+\)</span>$
+transpose dari C, disimbolkan dengan CT, akan mengubah baris menjadi kolom dan sebaliknya, sehingga:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 C^T = \begin{bmatrix} 2 &amp; 4 &amp; 5 \\ 8 &amp; 7 &amp; 7 \end{bmatrix}
 \end{split}\]</div>
-<div class="math notranslate nohighlight">
-\[
-\text{Ini adalah matriks hasil transpose dari matriks } C \text{. Dalam matriks hasil transpose, baris pertama dari matriks asal menjadi kolom pertama,}
-\]</div>
-<div class="math notranslate nohighlight">
-\[
-\text{baris kedua menjadi kolom kedua, dan seterusnya.}
-\]</div>
+<p>Ini adalah matriks hasil transpose dari matriks C. Baris pertama dari matriks asal masuk ke kolom pertama, baris kedua masuk ke kolom kedua, dan seterusnya.</p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -899,12 +861,12 @@ C^T = \begin{bmatrix} 2 &amp; 4 &amp; 5 \\ 8 &amp; 7 &amp; 7 \end{bmatrix}
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="intro.html"
+       href="sistemlinier.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Welcome to your Jupyter Book</p>
+        <p class="prev-next-title">&lt;no title&gt;</p>
       </div>
     </a>
 </div>
