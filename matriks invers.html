@@ -476,6 +476,13 @@ document.write(`
 <span class="nb">print</span><span class="p">(</span><span class="n">z</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">hasil</span><span class="p">)</span>
+<span class="c1"># perkalian tanpa menggunakan @</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+        <span class="n">hasil</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+=</span> <span class="n">A_invers</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">*</span> <span class="n">konstanta</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Hasil perkalian A invers dengan matriks solusi konstanta (tanpa menggunakan @ atau np.dot()):&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">hasil</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -509,6 +516,9 @@ Hasil perkalian A invers dengan matriks solusi konstanta (menggunakan operator @
  [0. 0. 0. 0. 1. 0.]
  [0. 0. 0. 0. 0. 1.]]
 [1. 2. 3. 4. 5. 6.]
+
+Hasil perkalian A invers dengan matriks solusi konstanta (tanpa menggunakan @ atau np.dot()):
+[ 2.  4.  6.  8. 10. 12.]
 </pre></div>
 </div>
 </div>
