@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>1. Determinan Matriks Identitas &#8212; My sample book</title>
+    <title>Sifat Determinan Matriks &#8212; My sample book</title>
   
   
   
@@ -183,21 +183,7 @@
 <li class="toctree-l1"><a class="reference internal" href="sistemlinier.html">SISTEM LINIER</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ALJABAR.html">ALJABAR MATRIKS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="matriks%20invers.html">MATRIKS INVERS</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">1. Determinan Matriks Identitas</a></li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Sifat Determinan Matriks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="transformasi.html">2. Rotasi (Rotation)</a></li>
 
 
@@ -387,7 +373,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>1. Determinan Matriks Identitas</h1>
+    <h1>Sifat Determinan Matriks</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -397,23 +383,22 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">1. Determinan Matriks Identitas</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#determinan-matriks-setelah-pertukaran-baris">2. Determinan Matriks Setelah Pertukaran Baris</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#baris-matriks-adalah-kelipatan-dari-baris-lainnya">3. Baris Matriks Adalah Kelipatan dari Baris Lainnya</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#kolom-matriks-adalah-kelipatan-dari-kolom-lainnya">4. Kolom Matriks Adalah Kelipatan dari Kolom Lainnya</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-adalah-kelipatan-dari-matriks-lainnya">5. Matriks Adalah Kelipatan dari Matriks Lainnya</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-adalah-hasil-penjumlahan-dari-dua-matriks">6. Matriks Adalah Hasil Penjumlahan dari Dua Matriks</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-adalah-segitiga-atas">7. Matriks Adalah Segitiga Atas</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-perkalian-dua-matriks">8. Hasil Perkalian Dua Matriks</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-singular">9. Matriks Singular</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-nol">10. Matriks Nol</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-dengan-baris-yang-sama">11. Matriks dengan Baris yang Sama</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-singular-non-invertible">12. Matriks Singular (Non-Invertible)</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-dengan-baris-yang-merupakan-kelipatan-dari-baris-lainnya">13. Matriks Dengan Baris yang Merupakan Kelipatan dari Baris Lainnya</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-dengan-baris-atau-kolom-nol">14. Matriks dengan Baris atau Kolom Nol</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#determinan-matriks-transpose">15. Determinan Matriks Transpose</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#determinan-matriks-identitas">1. Determinan Matriks Identitas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#determinan-matriks-setelah-pertukaran-baris">2. Determinan Matriks Setelah Pertukaran Baris</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#baris-matriks-adalah-kelipatan-dari-baris-lainnya">3. Baris Matriks Adalah Kelipatan dari Baris Lainnya</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kolom-matriks-adalah-kelipatan-dari-kolom-lainnya">4. Kolom Matriks Adalah Kelipatan dari Kolom Lainnya</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-adalah-kelipatan-dari-matriks-lainnya">5. Matriks Adalah Kelipatan dari Matriks Lainnya</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-adalah-hasil-penjumlahan-dari-dua-matriks">6. Matriks Adalah Hasil Penjumlahan dari Dua Matriks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-adalah-segitiga-atas">7. Matriks Adalah Segitiga Atas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-perkalian-dua-matriks">8. Hasil Perkalian Dua Matriks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-singular">9. Matriks Singular</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-nol">10. Matriks Nol</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-dengan-baris-yang-sama">11. Matriks dengan Baris yang Sama</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-singular-non-invertible">12. Matriks Singular (Non-Invertible)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-dengan-baris-yang-merupakan-kelipatan-dari-baris-lainnya">13. Matriks Dengan Baris yang Merupakan Kelipatan dari Baris Lainnya</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-dengan-baris-atau-kolom-nol">14. Matriks dengan Baris atau Kolom Nol</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#determinan-matriks-transpose">15. Determinan Matriks Transpose</a></li>
 </ul>
-
             </nav>
         </div>
     </div>
@@ -424,7 +409,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <p>#Sifat Determinan Matriks</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="sifat-determinan-matriks">
+<h1>Sifat Determinan Matriks<a class="headerlink" href="#sifat-determinan-matriks" title="Link to this heading">#</a></h1>
 <p>##A. macam- macam Contoh matriks</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -657,7 +643,7 @@ matriks T:
 </div>
 <p>##C. Sifat-Sifat Determinan</p>
 <section id="determinan-matriks-identitas">
-<h1>1. Determinan Matriks Identitas<a class="headerlink" href="#determinan-matriks-identitas" title="Link to this heading">#</a></h1>
+<h2>1. Determinan Matriks Identitas<a class="headerlink" href="#determinan-matriks-identitas" title="Link to this heading">#</a></h2>
 <p>Matriks identitas adalah matriks persegi dengan elemen 1 pada diagonal utama dan 0 pada posisi lainnya. Determinan dari matriks identitas adalah 1.</p>
 <p>Misalkan <span class="math notranslate nohighlight">\(A\)</span> dan <span class="math notranslate nohighlight">\(B\)</span> adalah matriks identitas berukuran <span class="math notranslate nohighlight">\(n \times n\)</span>, maka</p>
 <div class="math notranslate nohighlight">
@@ -689,7 +675,7 @@ Determinan B: 1.0
 </div>
 </section>
 <section id="determinan-matriks-setelah-pertukaran-baris">
-<h1>2. Determinan Matriks Setelah Pertukaran Baris<a class="headerlink" href="#determinan-matriks-setelah-pertukaran-baris" title="Link to this heading">#</a></h1>
+<h2>2. Determinan Matriks Setelah Pertukaran Baris<a class="headerlink" href="#determinan-matriks-setelah-pertukaran-baris" title="Link to this heading">#</a></h2>
 <p>Jika dua baris dari sebuah matriks ditukar, maka determinannya akan berubah tanda.</p>
 <p>Misalkan <span class="math notranslate nohighlight">\(C\)</span> adalah matriks awal dan <span class="math notranslate nohighlight">\(D\)</span> adalah matriks yang diperoleh setelah menukar dua baris pada matriks <span class="math notranslate nohighlight">\(C\)</span>, maka</p>
 <div class="math notranslate nohighlight">
@@ -721,7 +707,7 @@ Determinan D: 3.000000000000001
 </div>
 </section>
 <section id="baris-matriks-adalah-kelipatan-dari-baris-lainnya">
-<h1>3. Baris Matriks Adalah Kelipatan dari Baris Lainnya<a class="headerlink" href="#baris-matriks-adalah-kelipatan-dari-baris-lainnya" title="Link to this heading">#</a></h1>
+<h2>3. Baris Matriks Adalah Kelipatan dari Baris Lainnya<a class="headerlink" href="#baris-matriks-adalah-kelipatan-dari-baris-lainnya" title="Link to this heading">#</a></h2>
 <p>Jika suatu baris matriks adalah kelipatan dari baris lainnya, maka determinan dari matriks tersebut adalah nol.</p>
 <p>Misalkan <span class="math notranslate nohighlight">\(E\)</span> adalah matriks di mana baris ke-2 merupakan kelipatan dari baris ke-3, maka</p>
 <div class="math notranslate nohighlight">
@@ -747,7 +733,7 @@ Determinan D: 3.000000000000001
 </div>
 </section>
 <section id="kolom-matriks-adalah-kelipatan-dari-kolom-lainnya">
-<h1>4. Kolom Matriks Adalah Kelipatan dari Kolom Lainnya<a class="headerlink" href="#kolom-matriks-adalah-kelipatan-dari-kolom-lainnya" title="Link to this heading">#</a></h1>
+<h2>4. Kolom Matriks Adalah Kelipatan dari Kolom Lainnya<a class="headerlink" href="#kolom-matriks-adalah-kelipatan-dari-kolom-lainnya" title="Link to this heading">#</a></h2>
 <p>Jika suatu kolom matriks adalah kelipatan dari kolom lainnya, maka determinan dari matriks tersebut adalah nol.</p>
 <p>Misalkan <span class="math notranslate nohighlight">\(F\)</span> adalah matriks di mana kolom ke-3 merupakan kelipatan dari kolom ke-1, maka</p>
 <div class="math notranslate nohighlight">
@@ -773,7 +759,7 @@ Determinan D: 3.000000000000001
 </div>
 </section>
 <section id="matriks-adalah-kelipatan-dari-matriks-lainnya">
-<h1>5. Matriks Adalah Kelipatan dari Matriks Lainnya<a class="headerlink" href="#matriks-adalah-kelipatan-dari-matriks-lainnya" title="Link to this heading">#</a></h1>
+<h2>5. Matriks Adalah Kelipatan dari Matriks Lainnya<a class="headerlink" href="#matriks-adalah-kelipatan-dari-matriks-lainnya" title="Link to this heading">#</a></h2>
 <p>Jika suatu matriks merupakan kelipatan dari matriks lainnya, maka determinannya adalah kelipatan pangkat ordo dari matriks tersebut, dikalikan dengan determinan matriks kelipatannya.</p>
 <p>Misalkan <span class="math notranslate nohighlight">\(H\)</span> adalah matriks yang merupakan kelipatan dari matriks <span class="math notranslate nohighlight">\(C\)</span>, maka</p>
 <div class="math notranslate nohighlight">
@@ -803,7 +789,7 @@ Determinan H: 24.000000000000014
 </div>
 </section>
 <section id="matriks-adalah-hasil-penjumlahan-dari-dua-matriks">
-<h1>6. Matriks Adalah Hasil Penjumlahan dari Dua Matriks<a class="headerlink" href="#matriks-adalah-hasil-penjumlahan-dari-dua-matriks" title="Link to this heading">#</a></h1>
+<h2>6. Matriks Adalah Hasil Penjumlahan dari Dua Matriks<a class="headerlink" href="#matriks-adalah-hasil-penjumlahan-dari-dua-matriks" title="Link to this heading">#</a></h2>
 <p>Jika suatu matriks adalah hasil penjumlahan dari dua matriks, maka determinannya adalah hasil penjumlahan determinan matriks-matriks tersebut.</p>
 <p>Misalkan <span class="math notranslate nohighlight">\(M\)</span> adalah hasil penjumlahan dari matriks <span class="math notranslate nohighlight">\(K\)</span> dan <span class="math notranslate nohighlight">\(L\)</span>, maka</p>
 <div class="math notranslate nohighlight">
@@ -837,7 +823,7 @@ Determinan M: -47.999999999999986
 </div>
 </section>
 <section id="matriks-adalah-segitiga-atas">
-<h1>7. Matriks Adalah Segitiga Atas<a class="headerlink" href="#matriks-adalah-segitiga-atas" title="Link to this heading">#</a></h1>
+<h2>7. Matriks Adalah Segitiga Atas<a class="headerlink" href="#matriks-adalah-segitiga-atas" title="Link to this heading">#</a></h2>
 <p>Jika suatu matriks membentuk segitiga atas dengan nol di atas atau di bawah diagonal, maka determinannya adalah hasil perkalian diagonalnya.</p>
 <p>Misalkan <span class="math notranslate nohighlight">\(N\)</span> adalah matriks yang membentuk segitiga atas, maka</p>
 <div class="math notranslate nohighlight">
@@ -863,7 +849,7 @@ Determinan M: -47.999999999999986
 </div>
 </section>
 <section id="hasil-perkalian-dua-matriks">
-<h1>8. Hasil Perkalian Dua Matriks<a class="headerlink" href="#hasil-perkalian-dua-matriks" title="Link to this heading">#</a></h1>
+<h2>8. Hasil Perkalian Dua Matriks<a class="headerlink" href="#hasil-perkalian-dua-matriks" title="Link to this heading">#</a></h2>
 <p>Jika dua matriks dikalikan, determinan dari hasil matriks tersebut adalah hasil perkalian determinan matriks tersebut.</p>
 <p>Misalkan <span class="math notranslate nohighlight">\(P\)</span> adalah hasil perkalian dari matriks <span class="math notranslate nohighlight">\(O\)</span> dan <span class="math notranslate nohighlight">\(Q\)</span>, maka</p>
 <div class="math notranslate nohighlight">
@@ -899,7 +885,7 @@ Determinan P: 1.9999999999999993
 </div>
 </section>
 <section id="matriks-singular">
-<h1>9. Matriks Singular<a class="headerlink" href="#matriks-singular" title="Link to this heading">#</a></h1>
+<h2>9. Matriks Singular<a class="headerlink" href="#matriks-singular" title="Link to this heading">#</a></h2>
 <p>Jika suatu matriks merupakan matriks singular (tidak memiliki invers), maka determinannya adalah nol.</p>
 <p>Misalkan <span class="math notranslate nohighlight">\(R\)</span> adalah matriks singular, maka</p>
 <div class="math notranslate nohighlight">
@@ -925,7 +911,7 @@ Determinan P: 1.9999999999999993
 </div>
 </section>
 <section id="matriks-nol">
-<h1>10. Matriks Nol<a class="headerlink" href="#matriks-nol" title="Link to this heading">#</a></h1>
+<h2>10. Matriks Nol<a class="headerlink" href="#matriks-nol" title="Link to this heading">#</a></h2>
 <p>Determinan dari matriks nol adalah nol.</p>
 <p>Misalkan <span class="math notranslate nohighlight">\(S\)</span> adalah matriks nol, maka</p>
 <div class="math notranslate nohighlight">
@@ -951,7 +937,7 @@ Determinan P: 1.9999999999999993
 </div>
 </section>
 <section id="matriks-dengan-baris-yang-sama">
-<h1>11. Matriks dengan Baris yang Sama<a class="headerlink" href="#matriks-dengan-baris-yang-sama" title="Link to this heading">#</a></h1>
+<h2>11. Matriks dengan Baris yang Sama<a class="headerlink" href="#matriks-dengan-baris-yang-sama" title="Link to this heading">#</a></h2>
 <p>Jika suatu matriks memiliki dua baris yang identik (sama), maka determinannya adalah nol.</p>
 <p>Misalkan <span class="math notranslate nohighlight">\(T\)</span> adalah matriks yang memiliki dua baris yang sama, maka</p>
 <div class="math notranslate nohighlight">
@@ -977,7 +963,7 @@ Determinan P: 1.9999999999999993
 </div>
 </section>
 <section id="matriks-singular-non-invertible">
-<h1>12. Matriks Singular (Non-Invertible)<a class="headerlink" href="#matriks-singular-non-invertible" title="Link to this heading">#</a></h1>
+<h2>12. Matriks Singular (Non-Invertible)<a class="headerlink" href="#matriks-singular-non-invertible" title="Link to this heading">#</a></h2>
 <p>Jika suatu matriks adalah singular (tidak memiliki invers), maka determinannya adalah nol.</p>
 <p>Misalkan <span class="math notranslate nohighlight">\(U\)</span> adalah matriks singular, maka</p>
 <div class="math notranslate nohighlight">
@@ -1003,7 +989,7 @@ Determinan P: 1.9999999999999993
 </div>
 </section>
 <section id="matriks-dengan-baris-yang-merupakan-kelipatan-dari-baris-lainnya">
-<h1>13. Matriks Dengan Baris yang Merupakan Kelipatan dari Baris Lainnya<a class="headerlink" href="#matriks-dengan-baris-yang-merupakan-kelipatan-dari-baris-lainnya" title="Link to this heading">#</a></h1>
+<h2>13. Matriks Dengan Baris yang Merupakan Kelipatan dari Baris Lainnya<a class="headerlink" href="#matriks-dengan-baris-yang-merupakan-kelipatan-dari-baris-lainnya" title="Link to this heading">#</a></h2>
 <p>Jika suatu baris matriks adalah kelipatan dari baris lainnya, determinannya akan menjadi nol.</p>
 <p>Misalkan <span class="math notranslate nohighlight">\(V\)</span> adalah matriks di mana baris ke-2 merupakan kelipatan dari baris ke-1, maka</p>
 <div class="math notranslate nohighlight">
@@ -1029,7 +1015,7 @@ Determinan P: 1.9999999999999993
 </div>
 </section>
 <section id="matriks-dengan-baris-atau-kolom-nol">
-<h1>14. Matriks dengan Baris atau Kolom Nol<a class="headerlink" href="#matriks-dengan-baris-atau-kolom-nol" title="Link to this heading">#</a></h1>
+<h2>14. Matriks dengan Baris atau Kolom Nol<a class="headerlink" href="#matriks-dengan-baris-atau-kolom-nol" title="Link to this heading">#</a></h2>
 <p>Jika suatu matriks memiliki satu baris atau satu kolom yang semuanya nol, maka determinannya adalah nol.</p>
 <p>Misalkan <span class="math notranslate nohighlight">\(W\)</span> adalah matriks dengan satu baris atau satu kolom yang semuanya nol, maka</p>
 <div class="math notranslate nohighlight">
@@ -1056,7 +1042,7 @@ Determinan P: 1.9999999999999993
 </div>
 </section>
 <section id="determinan-matriks-transpose">
-<h1>15. Determinan Matriks Transpose<a class="headerlink" href="#determinan-matriks-transpose" title="Link to this heading">#</a></h1>
+<h2>15. Determinan Matriks Transpose<a class="headerlink" href="#determinan-matriks-transpose" title="Link to this heading">#</a></h2>
 <p>Determinan dari matriks transpose adalah sama dengan determinan dari matriks aslinya.</p>
 <p>Misalkan <span class="math notranslate nohighlight">\(A\)</span> adalah suatu matriks, maka</p>
 <div class="math notranslate nohighlight">
@@ -1081,9 +1067,6 @@ Determinan P: 1.9999999999999993
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Determinan A: -2.0000000000000004
 Determinan transpose dari A: -2.0
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
 </pre></div>
 </div>
 </div>
@@ -1234,9 +1217,8 @@ Matriks Kofaktor:
  [ -93.    2.  -34.  172.  -50.]
  [ 116.   44.    4. -164.   28.]
  [ -56. -112.   24.  144.  -20.]]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Transpos dari Matriks Kofaktor:
+
+Transpos dari Matriks Kofaktor:
 [[ 127.  -83.  -93.  116.  -56.]
  [ 254. -166.    2.   44. -112.]
  [   6.    2.  -34.    4.   24.]
@@ -1253,6 +1235,7 @@ Invers Matriks secara Manual:
 </div>
 </div>
 </div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -1319,23 +1302,22 @@ Invers Matriks secara Manual:
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">1. Determinan Matriks Identitas</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#determinan-matriks-setelah-pertukaran-baris">2. Determinan Matriks Setelah Pertukaran Baris</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#baris-matriks-adalah-kelipatan-dari-baris-lainnya">3. Baris Matriks Adalah Kelipatan dari Baris Lainnya</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#kolom-matriks-adalah-kelipatan-dari-kolom-lainnya">4. Kolom Matriks Adalah Kelipatan dari Kolom Lainnya</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-adalah-kelipatan-dari-matriks-lainnya">5. Matriks Adalah Kelipatan dari Matriks Lainnya</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-adalah-hasil-penjumlahan-dari-dua-matriks">6. Matriks Adalah Hasil Penjumlahan dari Dua Matriks</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-adalah-segitiga-atas">7. Matriks Adalah Segitiga Atas</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-perkalian-dua-matriks">8. Hasil Perkalian Dua Matriks</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-singular">9. Matriks Singular</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-nol">10. Matriks Nol</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-dengan-baris-yang-sama">11. Matriks dengan Baris yang Sama</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-singular-non-invertible">12. Matriks Singular (Non-Invertible)</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-dengan-baris-yang-merupakan-kelipatan-dari-baris-lainnya">13. Matriks Dengan Baris yang Merupakan Kelipatan dari Baris Lainnya</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-dengan-baris-atau-kolom-nol">14. Matriks dengan Baris atau Kolom Nol</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#determinan-matriks-transpose">15. Determinan Matriks Transpose</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#determinan-matriks-identitas">1. Determinan Matriks Identitas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#determinan-matriks-setelah-pertukaran-baris">2. Determinan Matriks Setelah Pertukaran Baris</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#baris-matriks-adalah-kelipatan-dari-baris-lainnya">3. Baris Matriks Adalah Kelipatan dari Baris Lainnya</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kolom-matriks-adalah-kelipatan-dari-kolom-lainnya">4. Kolom Matriks Adalah Kelipatan dari Kolom Lainnya</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-adalah-kelipatan-dari-matriks-lainnya">5. Matriks Adalah Kelipatan dari Matriks Lainnya</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-adalah-hasil-penjumlahan-dari-dua-matriks">6. Matriks Adalah Hasil Penjumlahan dari Dua Matriks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-adalah-segitiga-atas">7. Matriks Adalah Segitiga Atas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-perkalian-dua-matriks">8. Hasil Perkalian Dua Matriks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-singular">9. Matriks Singular</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-nol">10. Matriks Nol</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-dengan-baris-yang-sama">11. Matriks dengan Baris yang Sama</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-singular-non-invertible">12. Matriks Singular (Non-Invertible)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-dengan-baris-yang-merupakan-kelipatan-dari-baris-lainnya">13. Matriks Dengan Baris yang Merupakan Kelipatan dari Baris Lainnya</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-dengan-baris-atau-kolom-nol">14. Matriks dengan Baris atau Kolom Nol</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#determinan-matriks-transpose">15. Determinan Matriks Transpose</a></li>
 </ul>
-
   </nav></div>
 
 </div></div>
