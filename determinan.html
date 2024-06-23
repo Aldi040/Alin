@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>&lt;no title&gt; &#8212; My sample book</title>
+    <title>1. Determinan Matriks Identitas &#8212; My sample book</title>
   
   
   
@@ -29,7 +29,7 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
@@ -46,7 +46,7 @@
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="_static/copybutton.js?v=f281be69"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
@@ -57,6 +57,8 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'determinan';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -177,10 +179,25 @@
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="sistemlinier.html">SISTEM LINIER</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ALJABAR.html">ALJABAR MATRIKS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="matriks%20invers.html">MATRIKS INVERS</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">1. Determinan Matriks Identitas</a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <li class="toctree-l1"><a class="reference internal" href="transformasi.html">2. Rotasi (Rotation)</a></li>
 
 
@@ -214,9 +231,9 @@
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -357,9 +374,9 @@ document.write(`
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -370,7 +387,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1><no title></h1>
+    <h1>1. Determinan Matriks Identitas</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -379,7 +396,22 @@ document.write(`
                 <h2> Contents </h2>
             </div>
             <nav aria-label="Page">
-                <ul class="simple visible nav section-nav flex-column">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">1. Determinan Matriks Identitas</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#determinan-matriks-setelah-pertukaran-baris">2. Determinan Matriks Setelah Pertukaran Baris</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#baris-matriks-adalah-kelipatan-dari-baris-lainnya">3. Baris Matriks Adalah Kelipatan dari Baris Lainnya</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#kolom-matriks-adalah-kelipatan-dari-kolom-lainnya">4. Kolom Matriks Adalah Kelipatan dari Kolom Lainnya</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-adalah-kelipatan-dari-matriks-lainnya">5. Matriks Adalah Kelipatan dari Matriks Lainnya</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-adalah-hasil-penjumlahan-dari-dua-matriks">6. Matriks Adalah Hasil Penjumlahan dari Dua Matriks</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-adalah-segitiga-atas">7. Matriks Adalah Segitiga Atas</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-perkalian-dua-matriks">8. Hasil Perkalian Dua Matriks</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-singular">9. Matriks Singular</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-nol">10. Matriks Nol</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-dengan-baris-yang-sama">11. Matriks dengan Baris yang Sama</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-singular-non-invertible">12. Matriks Singular (Non-Invertible)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-dengan-baris-yang-merupakan-kelipatan-dari-baris-lainnya">13. Matriks Dengan Baris yang Merupakan Kelipatan dari Baris Lainnya</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-dengan-baris-atau-kolom-nol">14. Matriks dengan Baris atau Kolom Nol</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#determinan-matriks-transpose">15. Determinan Matriks Transpose</a></li>
 </ul>
 
             </nav>
@@ -624,56 +656,434 @@ matriks T:
 </div>
 </div>
 <p>##C. Sifat-Sifat Determinan</p>
+<section id="determinan-matriks-identitas">
+<h1>1. Determinan Matriks Identitas<a class="headerlink" href="#determinan-matriks-identitas" title="Link to this heading">#</a></h1>
+<p>Matriks identitas adalah matriks persegi dengan elemen 1 pada diagonal utama dan 0 pada posisi lainnya. Determinan dari matriks identitas adalah 1.</p>
+<p>Misalkan <span class="math notranslate nohighlight">\(A\)</span> dan <span class="math notranslate nohighlight">\(B\)</span> adalah matriks identitas berukuran <span class="math notranslate nohighlight">\(n \times n\)</span>, maka</p>
+<div class="math notranslate nohighlight">
+\[\text{Determinan } A = \det(A) = 1\]</div>
+<div class="math notranslate nohighlight">
+\[\text{Determinan } B = \det(B) = 1\]</div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Sifat-Sifat determinan</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Sifat-Sifat determinan&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;determinan Matriks&quot;</span><span class="p">)</span>
-<span class="c1"># Matriks identitas memiliki determinan 1.</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Determinan A (matriks identitas):&quot;</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">detA</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Determinan B (matriks identitas):&quot;</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">detB</span><span class="p">))</span>
-<span class="c1"># matriks C</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Determinan C matriks C: &quot;</span><span class="p">,</span><span class="nb">int</span><span class="p">(</span><span class="n">detC</span><span class="p">))</span>
-<span class="c1"># matriks c dengan merubah baris akan mengubah tanda dari determinan</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Determinan D (matriks c dengan merubah baris akan mengubah tanda dari determinan):&quot;</span><span class="p">,</span><span class="nb">int</span><span class="p">(</span><span class="n">detD</span><span class="p">))</span>
-<span class="c1"># Jika suatu baris matriks adalah kelipatan dari baris lainnya, determinannya akan menjadi nol.</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Determinan E (baris 2 merupakan kelipatan dari baris 3):&quot;</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">detE</span><span class="p">))</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 
-<span class="c1"># Jika suatu kolom matriks adalah kelipatan dari kolom lainnya, determinannya juga akan menjadi nol.</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Determinan F (kolom 3 merupakan kelipatan dari kolom 1):&quot;</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">detF</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Determinan G (kolom 3 merupakan kelipatan dari kolom 2):&quot;</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">detG</span><span class="p">))</span>
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]])</span>  <span class="c1"># matriks identitas</span>
+<span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]])</span>  <span class="c1"># matriks identitas</span>
 
-<span class="c1"># Untuk matriks yang merupakan kelipatan dari matriks lainnya, determinannya adalah kelipatan pangkat ordo dari matriks tersebut, dikalikan dengan determinan matriks kelipatannya.</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Determinan H (matriks H merupakan kelipatan dari matriks C):&quot;</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">detH</span><span class="p">))</span>
-<span class="c1"># Jika suatu matriks adalah hasil penjumlahan dari dua matriks, determinannya adalah hasil penjumlahan determinan matriks-matriks tersebut.</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Determinan M (hasil penjumlahan matriks K dan L):&quot;</span><span class="p">,</span> <span class="n">detM</span><span class="p">)</span>
+<span class="c1"># Determinan matriks A dan B</span>
+<span class="n">det_A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">det</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+<span class="n">det_B</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">det</span><span class="p">(</span><span class="n">B</span><span class="p">)</span>
 
-<span class="c1"># Jika suatu matriks membentuk segitiga atas dengan nol di atas atau di bawah diagonal, determinannya adalah hasil perkalian diagonalnya.</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Determinan N (matriks N membentuk segitiga atas):&quot;</span><span class="p">,</span> <span class="n">detN</span><span class="p">)</span>
-
-<span class="c1"># Jika dua matriks dikalikan, determinan dari hasil matriks adalah hasil perkalian determinan matriks tersebut.</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Determinan P (hasil perkalian matriks O dan Q):&quot;</span><span class="p">,</span> <span class="n">detP</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Determinan Q (matriks Q):&quot;</span><span class="p">,</span> <span class="n">detQ</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;determinan T:&quot;</span><span class="p">,</span><span class="n">detT</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Determinan A:&quot;</span><span class="p">,</span> <span class="n">det_A</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Determinan B:&quot;</span><span class="p">,</span> <span class="n">det_B</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Sifat-Sifat determinan
-determinan Matriks
-Determinan A (matriks identitas): 1
-Determinan B (matriks identitas): 1
-Determinan C matriks C:  -3
-Determinan D (matriks c dengan merubah baris akan mengubah tanda dari determinan): 3
-Determinan E (baris 2 merupakan kelipatan dari baris 3): 0
-Determinan F (kolom 3 merupakan kelipatan dari kolom 1): 0
-Determinan G (kolom 3 merupakan kelipatan dari kolom 2): 0
-Determinan H (matriks H merupakan kelipatan dari matriks C): 24
-Determinan M (hasil penjumlahan matriks K dan L): 2.0
-Determinan N (matriks N membentuk segitiga atas): -2.9999999999999982
-Determinan P (hasil perkalian matriks O dan Q): 2.0
-Determinan Q (matriks Q): 1.0
-determinan T: -2.9999999999999996
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Determinan A: 1.0
+Determinan B: 1.0
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="determinan-matriks-setelah-pertukaran-baris">
+<h1>2. Determinan Matriks Setelah Pertukaran Baris<a class="headerlink" href="#determinan-matriks-setelah-pertukaran-baris" title="Link to this heading">#</a></h1>
+<p>Jika dua baris dari sebuah matriks ditukar, maka determinannya akan berubah tanda.</p>
+<p>Misalkan <span class="math notranslate nohighlight">\(C\)</span> adalah matriks awal dan <span class="math notranslate nohighlight">\(D\)</span> adalah matriks yang diperoleh setelah menukar dua baris pada matriks <span class="math notranslate nohighlight">\(C\)</span>, maka</p>
+<div class="math notranslate nohighlight">
+\[\text{Determinan } C = \det(C) = c\]</div>
+<div class="math notranslate nohighlight">
+\[\text{Determinan } D = \det(D) = -c\]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">C</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]])</span>  <span class="c1"># matriks awal</span>
+<span class="n">D</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]])</span>  <span class="c1"># merubah baris 2 dengan 3</span>
+
+<span class="c1"># Determinan matriks C dan D</span>
+<span class="n">det_C</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">det</span><span class="p">(</span><span class="n">C</span><span class="p">)</span>
+<span class="n">det_D</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">det</span><span class="p">(</span><span class="n">D</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Determinan C:&quot;</span><span class="p">,</span> <span class="n">det_C</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Determinan D:&quot;</span><span class="p">,</span> <span class="n">det_D</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Determinan C: -3.000000000000001
+Determinan D: 3.000000000000001
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="baris-matriks-adalah-kelipatan-dari-baris-lainnya">
+<h1>3. Baris Matriks Adalah Kelipatan dari Baris Lainnya<a class="headerlink" href="#baris-matriks-adalah-kelipatan-dari-baris-lainnya" title="Link to this heading">#</a></h1>
+<p>Jika suatu baris matriks adalah kelipatan dari baris lainnya, maka determinan dari matriks tersebut adalah nol.</p>
+<p>Misalkan <span class="math notranslate nohighlight">\(E\)</span> adalah matriks di mana baris ke-2 merupakan kelipatan dari baris ke-3, maka</p>
+<div class="math notranslate nohighlight">
+\[\text{Determinan } E = \det(E) = 0\]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">E</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]])</span>  <span class="c1"># baris 2 merupakan kelipatan dari baris 3</span>
+
+<span class="c1"># Determinan matriks E</span>
+<span class="n">det_E</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">det</span><span class="p">(</span><span class="n">E</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Determinan E:&quot;</span><span class="p">,</span> <span class="n">det_E</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Determinan E: 0.0
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="kolom-matriks-adalah-kelipatan-dari-kolom-lainnya">
+<h1>4. Kolom Matriks Adalah Kelipatan dari Kolom Lainnya<a class="headerlink" href="#kolom-matriks-adalah-kelipatan-dari-kolom-lainnya" title="Link to this heading">#</a></h1>
+<p>Jika suatu kolom matriks adalah kelipatan dari kolom lainnya, maka determinan dari matriks tersebut adalah nol.</p>
+<p>Misalkan <span class="math notranslate nohighlight">\(F\)</span> adalah matriks di mana kolom ke-3 merupakan kelipatan dari kolom ke-1, maka</p>
+<div class="math notranslate nohighlight">
+\[\text{Determinan } F = \det(F) = 0\]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">F</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]])</span>  <span class="c1"># kolom 3 merupakan kelipatan dari kolom 1</span>
+
+<span class="c1"># Determinan matriks F</span>
+<span class="n">det_F</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">det</span><span class="p">(</span><span class="n">F</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Determinan F:&quot;</span><span class="p">,</span> <span class="n">det_F</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Determinan F: 0.0
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="matriks-adalah-kelipatan-dari-matriks-lainnya">
+<h1>5. Matriks Adalah Kelipatan dari Matriks Lainnya<a class="headerlink" href="#matriks-adalah-kelipatan-dari-matriks-lainnya" title="Link to this heading">#</a></h1>
+<p>Jika suatu matriks merupakan kelipatan dari matriks lainnya, maka determinannya adalah kelipatan pangkat ordo dari matriks tersebut, dikalikan dengan determinan matriks kelipatannya.</p>
+<p>Misalkan <span class="math notranslate nohighlight">\(H\)</span> adalah matriks yang merupakan kelipatan dari matriks <span class="math notranslate nohighlight">\(C\)</span>, maka</p>
+<div class="math notranslate nohighlight">
+\[\text{Determinan } H = \det(H) = k \cdot \det(C)\]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">C</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]])</span>  <span class="c1"># matriks C</span>
+<span class="n">H</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">6</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">]])</span>  <span class="c1"># matriks H merupakan kelipatan dari matriks C</span>
+
+<span class="c1"># Determinan matriks C dan H</span>
+<span class="n">det_C</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">det</span><span class="p">(</span><span class="n">C</span><span class="p">)</span>
+<span class="n">det_H</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">det</span><span class="p">(</span><span class="n">H</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Determinan C:&quot;</span><span class="p">,</span> <span class="n">det_C</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Determinan H:&quot;</span><span class="p">,</span> <span class="n">det_H</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Determinan C: -3.000000000000001
+Determinan H: 24.000000000000014
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="matriks-adalah-hasil-penjumlahan-dari-dua-matriks">
+<h1>6. Matriks Adalah Hasil Penjumlahan dari Dua Matriks<a class="headerlink" href="#matriks-adalah-hasil-penjumlahan-dari-dua-matriks" title="Link to this heading">#</a></h1>
+<p>Jika suatu matriks adalah hasil penjumlahan dari dua matriks, maka determinannya adalah hasil penjumlahan determinan matriks-matriks tersebut.</p>
+<p>Misalkan <span class="math notranslate nohighlight">\(M\)</span> adalah hasil penjumlahan dari matriks <span class="math notranslate nohighlight">\(K\)</span> dan <span class="math notranslate nohighlight">\(L\)</span>, maka</p>
+<div class="math notranslate nohighlight">
+\[\text{Determinan } M = \det(M) = \det(K) + \det(L)\]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">K</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">6</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">]])</span>  <span class="c1"># matriks K</span>
+<span class="n">L</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">6</span><span class="p">,</span> <span class="mi">8</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">]])</span>  <span class="c1"># matriks L</span>
+<span class="n">M</span> <span class="o">=</span> <span class="n">K</span> <span class="o">+</span> <span class="n">L</span>  <span class="c1"># hasil penjumlahan matriks K dan L</span>
+
+<span class="c1"># Determinan matriks K, L, dan M</span>
+<span class="n">det_K</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">det</span><span class="p">(</span><span class="n">K</span><span class="p">)</span>
+<span class="n">det_L</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">det</span><span class="p">(</span><span class="n">L</span><span class="p">)</span>
+<span class="n">det_M</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">det</span><span class="p">(</span><span class="n">M</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Determinan K:&quot;</span><span class="p">,</span> <span class="n">det_K</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Determinan L:&quot;</span><span class="p">,</span> <span class="n">det_L</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Determinan M:&quot;</span><span class="p">,</span> <span class="n">det_M</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Determinan K: -9.999999999999998
+Determinan L: -9.999999999999998
+Determinan M: -47.999999999999986
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="matriks-adalah-segitiga-atas">
+<h1>7. Matriks Adalah Segitiga Atas<a class="headerlink" href="#matriks-adalah-segitiga-atas" title="Link to this heading">#</a></h1>
+<p>Jika suatu matriks membentuk segitiga atas dengan nol di atas atau di bawah diagonal, maka determinannya adalah hasil perkalian diagonalnya.</p>
+<p>Misalkan <span class="math notranslate nohighlight">\(N\)</span> adalah matriks yang membentuk segitiga atas, maka</p>
+<div class="math notranslate nohighlight">
+\[\text{Determinan } N = \det(N) = \text{hasil perkalian elemen diagonal}\]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">N</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]])</span>  <span class="c1"># matriks N membentuk segitiga atas</span>
+
+<span class="c1"># Determinan matriks N</span>
+<span class="n">det_N</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">det</span><span class="p">(</span><span class="n">N</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Determinan N:&quot;</span><span class="p">,</span> <span class="n">det_N</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Determinan N: 6.999999999999999
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="hasil-perkalian-dua-matriks">
+<h1>8. Hasil Perkalian Dua Matriks<a class="headerlink" href="#hasil-perkalian-dua-matriks" title="Link to this heading">#</a></h1>
+<p>Jika dua matriks dikalikan, determinan dari hasil matriks tersebut adalah hasil perkalian determinan matriks tersebut.</p>
+<p>Misalkan <span class="math notranslate nohighlight">\(P\)</span> adalah hasil perkalian dari matriks <span class="math notranslate nohighlight">\(O\)</span> dan <span class="math notranslate nohighlight">\(Q\)</span>, maka</p>
+<div class="math notranslate nohighlight">
+\[\text{Determinan } P = \det(P) = \det(O) \cdot \det(Q)\]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">O</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">]])</span>  <span class="c1"># matriks O (2x2)</span>
+<span class="n">Q</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]])</span>  <span class="c1"># matriks Q (2x2)</span>
+
+<span class="c1"># Hasil perkalian matriks O dan Q</span>
+<span class="n">P</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">O</span><span class="p">,</span> <span class="n">Q</span><span class="p">)</span>
+
+<span class="c1"># Determinan matriks O, Q, dan P</span>
+<span class="n">det_O</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">det</span><span class="p">(</span><span class="n">O</span><span class="p">)</span>
+<span class="n">det_Q</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">det</span><span class="p">(</span><span class="n">Q</span><span class="p">)</span>
+<span class="n">det_P</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">det</span><span class="p">(</span><span class="n">P</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Determinan O:&quot;</span><span class="p">,</span> <span class="n">det_O</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Determinan Q:&quot;</span><span class="p">,</span> <span class="n">det_Q</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Determinan P:&quot;</span><span class="p">,</span> <span class="n">det_P</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Determinan O: 2.0
+Determinan Q: 1.0
+Determinan P: 1.9999999999999993
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="matriks-singular">
+<h1>9. Matriks Singular<a class="headerlink" href="#matriks-singular" title="Link to this heading">#</a></h1>
+<p>Jika suatu matriks merupakan matriks singular (tidak memiliki invers), maka determinannya adalah nol.</p>
+<p>Misalkan <span class="math notranslate nohighlight">\(R\)</span> adalah matriks singular, maka</p>
+<div class="math notranslate nohighlight">
+\[\text{Determinan } R = \det(R) = 0\]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">R</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]])</span>  <span class="c1"># matriks singular</span>
+
+<span class="c1"># Determinan matriks R</span>
+<span class="n">det_R</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">det</span><span class="p">(</span><span class="n">R</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Determinan R:&quot;</span><span class="p">,</span> <span class="n">det_R</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Determinan R: 0.0
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="matriks-nol">
+<h1>10. Matriks Nol<a class="headerlink" href="#matriks-nol" title="Link to this heading">#</a></h1>
+<p>Determinan dari matriks nol adalah nol.</p>
+<p>Misalkan <span class="math notranslate nohighlight">\(S\)</span> adalah matriks nol, maka</p>
+<div class="math notranslate nohighlight">
+\[\text{Determinan } S = \det(S) = 0\]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">S</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]])</span>  <span class="c1"># matriks nol</span>
+
+<span class="c1"># Determinan matriks S</span>
+<span class="n">det_S</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">det</span><span class="p">(</span><span class="n">S</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Determinan S:&quot;</span><span class="p">,</span> <span class="n">det_S</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Determinan S: 0.0
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="matriks-dengan-baris-yang-sama">
+<h1>11. Matriks dengan Baris yang Sama<a class="headerlink" href="#matriks-dengan-baris-yang-sama" title="Link to this heading">#</a></h1>
+<p>Jika suatu matriks memiliki dua baris yang identik (sama), maka determinannya adalah nol.</p>
+<p>Misalkan <span class="math notranslate nohighlight">\(T\)</span> adalah matriks yang memiliki dua baris yang sama, maka</p>
+<div class="math notranslate nohighlight">
+\[\text{Determinan } T = \det(T) = 0\]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">T</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">]])</span>  <span class="c1"># matriks T dengan dua baris yang sama</span>
+
+<span class="c1"># Determinan matriks T</span>
+<span class="n">det_T</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">det</span><span class="p">(</span><span class="n">T</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Determinan T:&quot;</span><span class="p">,</span> <span class="n">det_T</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Determinan T: -2.9999999999999996
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="matriks-singular-non-invertible">
+<h1>12. Matriks Singular (Non-Invertible)<a class="headerlink" href="#matriks-singular-non-invertible" title="Link to this heading">#</a></h1>
+<p>Jika suatu matriks adalah singular (tidak memiliki invers), maka determinannya adalah nol.</p>
+<p>Misalkan <span class="math notranslate nohighlight">\(U\)</span> adalah matriks singular, maka</p>
+<div class="math notranslate nohighlight">
+\[\text{Determinan } U = \det(U) = 0\]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">U</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">]])</span>  <span class="c1"># matriks singular</span>
+
+<span class="c1"># Determinan matriks U</span>
+<span class="n">det_U</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">det</span><span class="p">(</span><span class="n">U</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Determinan U:&quot;</span><span class="p">,</span> <span class="n">det_U</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Determinan U: 0.0
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="matriks-dengan-baris-yang-merupakan-kelipatan-dari-baris-lainnya">
+<h1>13. Matriks Dengan Baris yang Merupakan Kelipatan dari Baris Lainnya<a class="headerlink" href="#matriks-dengan-baris-yang-merupakan-kelipatan-dari-baris-lainnya" title="Link to this heading">#</a></h1>
+<p>Jika suatu baris matriks adalah kelipatan dari baris lainnya, determinannya akan menjadi nol.</p>
+<p>Misalkan <span class="math notranslate nohighlight">\(V\)</span> adalah matriks di mana baris ke-2 merupakan kelipatan dari baris ke-1, maka</p>
+<div class="math notranslate nohighlight">
+\[\text{Determinan } V = \det(V) = 0\]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">V</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">6</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span> <span class="p">[</span><span class="mi">12</span><span class="p">,</span> <span class="mi">8</span><span class="p">]])</span>  <span class="c1"># baris 2 merupakan kelipatan dari baris 1</span>
+
+<span class="c1"># Determinan matriks V</span>
+<span class="n">det_V</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">det</span><span class="p">(</span><span class="n">V</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Determinan V:&quot;</span><span class="p">,</span> <span class="n">det_V</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Determinan V: 0.0
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="matriks-dengan-baris-atau-kolom-nol">
+<h1>14. Matriks dengan Baris atau Kolom Nol<a class="headerlink" href="#matriks-dengan-baris-atau-kolom-nol" title="Link to this heading">#</a></h1>
+<p>Jika suatu matriks memiliki satu baris atau satu kolom yang semuanya nol, maka determinannya adalah nol.</p>
+<p>Misalkan <span class="math notranslate nohighlight">\(W\)</span> adalah matriks dengan satu baris atau satu kolom yang semuanya nol, maka</p>
+<div class="math notranslate nohighlight">
+\[\text{Determinan } W = \det(W) = 0\]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># Matriks dengan satu baris atau satu kolom yang semuanya nol</span>
+<span class="n">W</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]])</span>
+
+<span class="c1"># Determinan matriks W</span>
+<span class="n">det_W</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">det</span><span class="p">(</span><span class="n">W</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Determinan W:&quot;</span><span class="p">,</span> <span class="n">det_W</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Determinan W: 0.0
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="determinan-matriks-transpose">
+<h1>15. Determinan Matriks Transpose<a class="headerlink" href="#determinan-matriks-transpose" title="Link to this heading">#</a></h1>
+<p>Determinan dari matriks transpose adalah sama dengan determinan dari matriks aslinya.</p>
+<p>Misalkan <span class="math notranslate nohighlight">\(A\)</span> adalah suatu matriks, maka</p>
+<div class="math notranslate nohighlight">
+\[\det(A^T) = \det(A)\]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]])</span>  <span class="c1"># matriks A</span>
+
+<span class="c1"># Determinan matriks A</span>
+<span class="n">det_A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">det</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+
+<span class="c1"># Determinan matriks transpose dari A</span>
+<span class="n">det_A_transpose</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">det</span><span class="p">(</span><span class="n">A</span><span class="o">.</span><span class="n">T</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Determinan A:&quot;</span><span class="p">,</span> <span class="n">det_A</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Determinan transpose dari A:&quot;</span><span class="p">,</span> <span class="n">det_A_transpose</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Determinan A: -2.0000000000000004
+Determinan transpose dari A: -2.0
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
 </pre></div>
 </div>
 </div>
@@ -824,8 +1234,9 @@ Matriks Kofaktor:
  [ -93.    2.  -34.  172.  -50.]
  [ 116.   44.    4. -164.   28.]
  [ -56. -112.   24.  144.  -20.]]
-
-Transpos dari Matriks Kofaktor:
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Transpos dari Matriks Kofaktor:
 [[ 127.  -83.  -93.  116.  -56.]
  [ 254. -166.    2.   44. -112.]
  [   6.    2.  -34.    4.   24.]
@@ -842,6 +1253,7 @@ Invers Matriks secara Manual:
 </div>
 </div>
 </div>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -906,7 +1318,22 @@ Invers Matriks secara Manual:
     <i class="fa-solid fa-list"></i> Contents
   </div>
   <nav class="bd-toc-nav page-toc">
-    <ul class="simple visible nav section-nav flex-column">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">1. Determinan Matriks Identitas</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#determinan-matriks-setelah-pertukaran-baris">2. Determinan Matriks Setelah Pertukaran Baris</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#baris-matriks-adalah-kelipatan-dari-baris-lainnya">3. Baris Matriks Adalah Kelipatan dari Baris Lainnya</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#kolom-matriks-adalah-kelipatan-dari-kolom-lainnya">4. Kolom Matriks Adalah Kelipatan dari Kolom Lainnya</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-adalah-kelipatan-dari-matriks-lainnya">5. Matriks Adalah Kelipatan dari Matriks Lainnya</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-adalah-hasil-penjumlahan-dari-dua-matriks">6. Matriks Adalah Hasil Penjumlahan dari Dua Matriks</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-adalah-segitiga-atas">7. Matriks Adalah Segitiga Atas</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-perkalian-dua-matriks">8. Hasil Perkalian Dua Matriks</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-singular">9. Matriks Singular</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-nol">10. Matriks Nol</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-dengan-baris-yang-sama">11. Matriks dengan Baris yang Sama</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-singular-non-invertible">12. Matriks Singular (Non-Invertible)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-dengan-baris-yang-merupakan-kelipatan-dari-baris-lainnya">13. Matriks Dengan Baris yang Merupakan Kelipatan dari Baris Lainnya</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-dengan-baris-atau-kolom-nol">14. Matriks dengan Baris atau Kolom Nol</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#determinan-matriks-transpose">15. Determinan Matriks Transpose</a></li>
 </ul>
 
   </nav></div>
